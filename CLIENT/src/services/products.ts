@@ -5,7 +5,7 @@ import { Cookies } from "react-cookie";
 export const productsApi = createApi({
   reducerPath: "productsApi",
   baseQuery: fetchBaseQuery({
-    bbaseUrl: "https://win-server-production.up.railway.app/api",
+    baseUrl: "https://win-server-production.up.railway.app/api",
     // baseUrl: "http://localhost:5000/api",
 
     prepareHeaders: (headers) => {
