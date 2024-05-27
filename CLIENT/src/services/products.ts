@@ -5,8 +5,8 @@ import { Cookies } from "react-cookie";
 export const productsApi = createApi({
   reducerPath: "productsApi",
   baseQuery: fetchBaseQuery({
-    // baseUrl: "https://win-server-7ar9pzc1b-nuridinmohammads-projects.vercel.app/api",
-    baseUrl: "http://localhost:5000/api",
+    baseUrl: "https://win-server.vercel.app/api",
+    // baseUrl: "http://localhost:5000/api",
 
     prepareHeaders: (headers) => {
       const token = new Cookies().get("access_token");
