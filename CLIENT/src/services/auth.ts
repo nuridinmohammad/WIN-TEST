@@ -13,7 +13,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const authApi = createApi({
   reducerPath: "authApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "win-server-production.up.railway.app/api",
+    baseUrl: "https://win-server-production.up.railway.app/api",
     // baseUrl: "http://localhost:5000/api",
   }),
   tagTypes: ["auth"],
