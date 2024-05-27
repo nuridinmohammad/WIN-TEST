@@ -13,9 +13,9 @@ export declare class AuthService {
     signinLocal(dto: LoginDto): Promise<Tokens>;
     current(userId: number): Promise<{
         name: string;
-        gender: import(".prisma/client").$Enums.Gender;
         email: string;
         id: number;
+        gender: import(".prisma/client").$Enums.Gender;
         created_at: Date;
     }>;
     logout(userId: number): Promise<boolean>;
