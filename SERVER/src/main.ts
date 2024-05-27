@@ -8,10 +8,16 @@ import { ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {
-  const app = await NestFactory.create<NestExpressApplication>(AppModule, {
-    cors: {
-      origin: true,
-    },
+  // const app = await NestFactory.create<NestExpressApplication>(AppModule, {
+  //   cors: {
+  //     origin: true,
+  //   },
+  // });
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+   app.enableCors({
+    origin: 'https://win-client.vercel.app', // Your client origin
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+    credentials: true, // if you need to handle cookies
   });
   const logger = app.get(WINSTON_MODULE_NEST_PROVIDER);
   app.useLogger(logger);
