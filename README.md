@@ -24,13 +24,13 @@ $ npm install
   1. buat terlebih dahulu database di lokal, dengan nama win_db
   2. $ npx prisma init --datasource-provider postgresql
   3. $ npx prisma migrate dev --name init
-  4. dan pastekan kode berikut ke file .env:
+  4. dan tambahkan dibawahnya kode berikut ke file .env:
     PORT=5000
     RT_SECRET='asdf;lkj'
     AT_SECRET=';lkjasdf'  
 ```
 
-# Running the app
+# Running server
 
 ```bash
 # development
@@ -50,7 +50,7 @@ $ cd CLIENT/
 $ npm install
 ```
 
-# Running the app
+# Running client
 
 ```bash
 # development
