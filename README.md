@@ -26,7 +26,7 @@ $ npm run start:prod
 ## Installation CLIENT
 
 ```bash
-$ cd SERVER/
+$ cd CLIENT/
 $ npm install
 ```
 
