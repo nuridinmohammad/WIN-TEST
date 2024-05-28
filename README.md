@@ -10,6 +10,17 @@ $ cd SERVER/
 $ npm install
 ```
 
+- create file .env pada root dir SERVER
+- paste code berikut :
+  ```
+  DATABASE_URL="postgresql://default:KCQ9sXD2MTyb@ep-morning-dawn-a13hfsys.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
+# DATABASE_URL="mysql://root:asdf;lkj@localhost:3306/win_db?schema=public"
+PORT=5000
+RT_SECRET='asdf;lkj'
+AT_SECRET=';lkjasdf'
+
+  ```
+
 # Running the app
 
 ```bash
