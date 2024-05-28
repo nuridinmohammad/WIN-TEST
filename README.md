@@ -16,10 +16,19 @@ $ npm install
   DATABASE_URL="postgresql://default:KCQ9sXD2MTyb@ep-morning-dawn-a13hfsys.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
   PORT=5000
   RT_SECRET='asdf;lkj'
-  AT_SECRET=';lkjasdf'
-  # DATABASE_URL="mysql://root:asdf;lkj@localhost:3306/win_db?schema=public"
-  
+  AT_SECRET=';lkjasdf'  
   ```
+- jika ingin menggunakan database lokal postgre, berikut:
+
+```
+  1. buat terlebih dahulu database di lokal, dengan nama win_db
+  2. $ npx prisma init --datasource-provider postgresql
+  3. $ npx prisma migrate dev --name init
+  4. dan pastekan kode berikut ke file .env:
+    PORT=5000
+    RT_SECRET='asdf;lkj'
+    AT_SECRET=';lkjasdf'  
+```
 
 # Running the app
 
